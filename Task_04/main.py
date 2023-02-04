@@ -3,3 +3,12 @@
 # Пример:
 # 3 2 4 -> yes
 # 3 2 1 -> no
+
+sizeN = int(input('Введите длину шоколадки: -> '))
+sizeM = int(input('Введите ширину шоколадки: -> '))
+quantity = int(input('Введите колличесвто долек: -> '))
+
+if sizeN * sizeM > quantity and (sizeN % quantity == 0 or sizeM % quantity == 0):
+    print(f'Можно отломить {quantity} долек')
+else:
+    print(f'Нельзя отломить {quantity} долек')
