@@ -8,10 +8,13 @@
 
 total = int(input('Введите количество сделанных журавликов: -> '))
 
-katya = (total // 3) * 2 
-petya = katya // 4
-sereja = katya // 4
+if total % 3 == 0:
+    katya = (total // 3) * 2 
+    petya = katya // 4
+    sereja = katya // 4
+    print(f'Катя сделала {katya} журавликов')
+    print(f'Петя сделал {petya} журавликов')
+    print(f'Сережа сделал {sereja} журавликов')
 
-print(f'Катя сделала {katya} журавликов')
-print(f'Петя сделал {petya} журавликов')
-print(f'Сережа сделал {sereja} журавликов')
+else:
+    print('Введенное количество не подходит условию задачи')
